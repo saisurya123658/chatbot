@@ -1,142 +1,4 @@
-{
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "Hello",
-          "Hey",
-          "Good morning",
-          "Good evening"
-        ],
-        "responses": [
-          "Hello! How can I assist you today?",
-          "Hi there, how are you feeling today?",
-          "Hey! How can I help you?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": [
-          "Bye",
-          "See you later",
-          "Goodbye",
-          "Take care"
-        ],
-        "responses": [
-          "Goodbye! Take care of yourself.",
-          "See you later! Remember to take breaks.",
-          "Bye! I'm here if you need to talk."
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": [
-          "Thanks",
-          "Thank you",
-          "I appreciate it",
-          "Many thanks"
-        ],
-        "responses": [
-          "You're welcome! Let me know if there's anything else I can do.",
-          "Happy to help! Take care of yourself.",
-          "You're welcome. Stay positive!"
-        ]
-      },
-      {
-        "tag": "fever",
-        "patterns": [
-          "I have a fever",
-          "What should I take for fever?",
-          "Suggest medicine for fever"
-        ],
-        "responses": [
-          "You can take paracetamol to reduce fever. Stay hydrated and rest well.",
-          "If fever persists for more than two days, consult a doctor.",
-          "Drink plenty of fluids and avoid heavy physical activities."
-        ]
-      },
-      {
-        "tag": "skin_rash",
-        "patterns": [
-          "I have a skin rash",
-          "How do I treat skin rash?",
-          "Suggest ointment for rash"
-        ],
-        "responses": [
-          "Hydrocortisone cream or antihistamines can help with skin rashes.",
-          "Keep the area clean and avoid scratching.",
-          "If the rash spreads or becomes painful, consult a dermatologist."
-        ]
-      },
-      {
-        "tag": "sore_throat",
-        "patterns": [
-          "I have a sore throat",
-          "What helps with sore throat?",
-          "Suggest remedy for sore throat"
-        ],
-        "responses": [
-          "Gargle with warm salt water and drink warm fluids.",
-          "Lozenges and throat sprays can provide relief.",
-          "If the pain persists, consult a doctor for further treatment."
-        ]
-      },
-      {
-        "tag": "back_pain",
-        "patterns": [
-          "My back hurts",
-          "What can I do for back pain?",
-          "Suggest remedy for back pain"
-        ],
-        "responses": [
-          "Rest, apply a hot or cold compress, and consider light stretching.",
-          "Ibuprofen or paracetamol can help reduce pain.",
-          "If the pain continues, see a physiotherapist or doctor."
-        ]
-      },
-      {
-        "tag": "nausea",
-        "patterns": [
-          "I feel nauseous",
-          "How can I stop nausea?",
-          "Suggest something for nausea"
-        ],
-        "responses": [
-          "Try drinking ginger tea or peppermint tea.",
-          "Rest and stay hydrated. Avoid strong odors.",
-          "If nausea persists, consider anti-nausea medication or consult a doctor."
-        ]
-      },
-      {
-        "tag": "anxiety",
-        "patterns": [
-          "I'm feeling anxious",
-          "How can I calm anxiety?",
-          "Suggest ways to reduce anxiety"
-        ],
-        "responses": [
-          "Practice deep breathing exercises or meditation.",
-          "Take breaks and engage in calming activities like reading or walking.",
-          "If anxiety affects daily life, consider speaking with a therapist."
-        ]
-      },
-      {
-        "tag": "fatigue",
-        "patterns": [
-          "I'm feeling tired all the time",
-          "Why am I so fatigued?",
-          "Suggest remedies for fatigue"
-        ],
-        "responses": [
-          "Ensure you are getting enough sleep and staying hydrated.",
-          "Take regular breaks and maintain a balanced diet.",
-          "If fatigue persists, consider visiting a doctor for tests."
-        ]
-      }
-    ]
-  }
-  [
+[
     {
         "tag": "greeting",
         "patterns": [
@@ -270,6 +132,71 @@
             "My name is Chatbot."
         ]
     },
+    {
+        "tag": "skin_rash",
+        "patterns": [
+          "I have a skin rash",
+          "How do I treat skin rash?",
+          "Suggest ointment for rash"
+        ],
+        "responses": [
+          "Hydrocortisone cream or antihistamines can help with skin rashes.",
+          "Keep the area clean and avoid scratching.",
+          "If the rash spreads or becomes painful, consult a dermatologist."
+        ]
+      },
+      {
+        "tag": "sore_throat",
+        "patterns": [
+          "I have a sore throat",
+          "What helps with sore throat?",
+          "Suggest remedy for sore throat"
+        ],
+        "responses": [
+          "Gargle with warm salt water and drink warm fluids.",
+          "Lozenges and throat sprays can provide relief.",
+          "If the pain persists, consult a doctor for further treatment."
+        ]
+      },
+      {
+        "tag": "back_pain",
+        "patterns": [
+          "My back hurts",
+          "What can I do for back pain?",
+          "Suggest remedy for back pain"
+        ],
+        "responses": [
+          "Rest, apply a hot or cold compress, and consider light stretching.",
+          "Ibuprofen or paracetamol can help reduce pain.",
+          "If the pain continues, see a physiotherapist or doctor."
+        ]
+      },
+      {
+        "tag": "nausea",
+        "patterns": [
+          "I feel nauseous",
+          "How can I stop nausea?",
+          "Suggest something for nausea"
+        ],
+        "responses": [
+          "Try drinking ginger tea or peppermint tea.",
+          "Rest and stay hydrated. Avoid strong odors.",
+          "If nausea persists, consider anti-nausea medication or consult a doctor."
+        ]
+      },
+      {
+        "tag": "anxiety",
+        "patterns": [
+          "I'm feeling anxious",
+          "How can I calm anxiety?",
+          "Suggest ways to reduce anxiety"
+        ],
+        "responses": [
+          "Practice deep breathing exercises or meditation.",
+          "Take breaks and engage in calming activities like reading or walking.",
+          "If anxiety affects daily life, consider speaking with a therapist."
+        ]
+      },
     {
         "tag": "favorite_color",
         "patterns": [
