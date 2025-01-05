@@ -1,1 +1,114 @@
+<style>
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
 
+/* Chatbot Container */
+.chat-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Title */
+.chat-container h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* User Input */
+.user-input {
+    display: flex;
+    margin-top: 20px;
+}
+
+.user-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.user-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.user-input button:hover {
+    background-color: #45a049;
+}
+
+/* Chat Log */
+.chat-log {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.chat-log .message {
+    margin-bottom: 10px;
+}
+
+.chat-log .message.user {
+    text-align: right;
+    color: #000000;
+}
+
+.chat-log .message.bot {
+    text-align: left;
+    color: #555555;
+}
+</style>
+
+<div class="chat-container">
+    <h1>Chatbot Interface</h1>
+    <div class="chat-log" id="chat-log">
+        <!-- Chat messages will be appended here -->
+    </div>
+    <div class="user-input">
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script>
+function sendMessage() {
+    const input = document.getElementById('user-input');
+    const chatLog = document.getElementById('chat-log');
+    
+    if (input.value.trim() === '') return;
+    
+    // Append user message
+    const userMessage = document.createElement('div');
+    userMessage.className = 'message user';
+    userMessage.innerText = input.value;
+    chatLog.appendChild(userMessage);
+
+    // Simulate chatbot response
+    const botMessage = document.createElement('div');
+    botMessage.className = 'message bot';
+    botMessage.innerText = 'Processing your input...'; // Replace with response
+    chatLog.appendChild(botMessage);
+
+    // Clear the input field
+    input.value = '';
+}
+</script>
