@@ -14,7 +14,6 @@ Ensure you have the required dependencies by installing from the `requirements.t
 pip install -r requirements.txt
 ```
 
-
 ## How to Run
 1. Clone the repository:
 ```bash
