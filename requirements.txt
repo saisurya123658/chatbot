@@ -2,3 +2,4 @@ chatbot==1.5.2b
 nltk==3.9.1
 scikit_learn==1.6.0
 streamlit==1.41.1
+
